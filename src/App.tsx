@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
+import ExpandableText from "./expandableText";
 function App() {
   const [game, setGame] = useState({
     id: 1,
@@ -18,7 +18,6 @@ function App() {
   });
 
   const handleClick = () => {
-    
     setGame({ ...game, players: { ...game.players, name: "kittu" } });
     // updating the quantity of an item.
     setCart({
@@ -31,8 +30,20 @@ function App() {
 
   return (
     <>
-      <div></div>
       <button onClick={handleClick}>Click Here</button>
+      <ExpandableText>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolor
+        sunt dignissimos. Sunt officia soluta odit, aut nostrum voluptatem ullam
+        aspernatur quo illum optio expedita iure quis mollitia nobis laudantium
+        vero accusantium, rem dolorum atque obcaecati. Tempora quo doloribus
+        recusandae assumenda repudiandae quidem quos, adipisci sint nihil
+        deleniti doloremque ipsam officiis non ad, mollitia reprehenderit rem
+        accusamus dignissimos inventore molestias maxime. Eveniet inventore
+        molestias neque aliquam dignissimos repellendus, voluptatem dolores
+        itaque quos, officiis velit facilis odit id illum vitae dolor dicta
+        voluptate iure? Natus sit, quas sequi dolor ratione, cumque ab unde
+        doloribus esse aperiam nostrum! Maxime aperiam officia provident.
+      </ExpandableText>
     </>
   );
 }
