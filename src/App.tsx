@@ -18,7 +18,9 @@ function App() {
   });
 
   const handleClick = () => {
+    
     setGame({ ...game, players: { ...game.players, name: "kittu" } });
+    // updating the quantity of an item.
     setCart({
       ...cart,
       items: cart.items.map((item) =>
